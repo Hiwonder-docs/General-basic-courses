@@ -6,7 +6,7 @@
 # -- Project information -----------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#project-information
 
-project = 'General basic courses'
+project = 'Develop basic curriculum'
 copyright = '2024, Hiwonder'
 author = 'Hiwonder'
 release = 'v1.0'
