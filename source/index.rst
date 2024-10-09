@@ -11,6 +11,8 @@
    docs/2_python_basics_course.md
    docs/3_docker_container_basics_course.md
    docs/4_ros_basics_course.md
+   docs/5_pi5_and_expansion.md
+   docs/6_opencv.md
 
 
 
