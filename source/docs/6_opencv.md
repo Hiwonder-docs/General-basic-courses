@@ -899,7 +899,7 @@ python3 Scale.py
 
 - #### 8.3.3 实验分析
 
-可以在目录"**第4章 OpenCV计算机视觉学习-\>图像处理进阶篇-\>第8课 图像处理—几何变换-\>例程源码-\>Scale**"下查看例程"**Scale.py**"。
+可以在目录"**[8. 图像处理—几何变换-\>例程源码-\>Scale]()**"下查看例程"**Scale.py**"。
 
 ```python
 import numpy as np
@@ -1170,7 +1170,7 @@ sudo python3 Revolve.py
 
 3. **实验分析**
 
-可以在目录"**第5章 OpenCV计算机视觉学习\第8课 图像处理——几何变换\例程源码\Revolve**"下查看例程"**Revolve.py**"。
+可以在目录"**[8. 图像处理——几何变换\例程源码\Revolve]()**"下查看例程"**Revolve.py**"。
 
 ```python
 import cv2
@@ -1439,7 +1439,7 @@ sudo python3 copy.py
 
 3. **实验分析**
 
-可以在目录"**第5章 OpenCV计算机视觉学习\第8课 图像处理——几何变换\例程源码\Remap**"下查看例程"**copy.py**"。
+可以在目录"**[8. 图像处理——几何变换\例程源码\Remap]()**"下查看例程"**copy.py**"。
 
 ```python
 import cv2
@@ -1647,7 +1647,7 @@ sudo python3 x_rotation.py
 
 **实验分析**
 
-可以在目录"**第5章 OpenCV计算机视觉学习\第8课 图像处理——几何变换\例程源码\Remap**"下查看例程"**x_rotation.py**"。
+可以在目录"**[8. 图像处理——几何变换\例程源码\Remap]()**"下查看例程"**x_rotation.py**"。
 
 ```py
 import cv2
@@ -2432,7 +2432,7 @@ Canny边缘检测算法是一种非常流行的边缘检测算法，是John F.Ca
 
 **去除噪声**
 
-边缘检测极易受到噪声影响，因此需要使用高斯滤波器去除噪声，具体操作可参考目录"**第5章 OpenCV计算机视觉学习-\>第9课 图像处理——平滑**"下的文档。
+边缘检测极易受到噪声影响，因此需要使用高斯滤波器去除噪声，具体操作可参考目录"**[9. 图像处理——平滑]()**"下的文档。
 
 **计算图像梯度幅值与方向**
 
@@ -2470,7 +2470,7 @@ Canny边缘检测算法是沿着梯度方向对幅值进行非极大值抑制的
 
 本节例程会对图像进行边缘检测。
 
-开始操作前，需要先将目录"**第5章 OpenCV计算机视觉学习\第10课 图像处理——边缘检测\例程源码**"下的例程"**edge_detection.py**"和示例图片"**luna.jpg**"上传到系统桌面。
+开始操作前，需要先将目录"**[10. 图像处理——边缘检测\例程源码]()**"下的例程"**edge_detection.py**"和示例图片"**luna.jpg**"上传到系统桌面。
 
 :::{Note}
 输入指令时需严格区分大小写，且可以使用"Tab"键补齐关键字。
@@ -2812,15 +2812,15 @@ plt.show()
 
 本节例程会**对指定图像分别进行腐蚀、膨胀、开运算、闭运算、顶帽运算和底帽运算处理**。
 
-开始操作前，需要先将目录"**第4章 OpenCV计算机视觉学习-\>图像处理进阶篇-\>第11课 图像处理——形态学处理-\>例程源码**"下的例程"**morphology_operations.py**"和示例图片"**example_org.jpg**"、"**example_noise.jpg**"、"**example_cave.jpg**"复制到共享文件夹。
+开始操作前，需要先将目录"**[11. 图像处理——形态学处理-\>例程源码]()**"下的例程"**morphology_operations.py**"和示例图片"**example_org.jpg**"、"**example_noise.jpg**"、"**example_cave.jpg**"复制到共享文件夹。
 
-关于共享文件夹的配置方法，可参考目录"**第2章 Linux系统简介及使用入门-\>Linux基础课程-\>第3课 Linux系统安装及换源方法**"下的文档。
+关于共享文件夹的配置方法，可参考目录"**[Linux基础课程-\>3. Linux系统安装及换源方法]()**"下的文档。
 
 :::{Note}
 输入指令时需严格区分大小写，且可以使用"Tab"键补齐关键字。
 :::
 
-1.  启动虚拟机，点击系统任务栏的图标<img src="../_static/media/chapter_6/section_11/image5.png"  />，并点击图标<img src="../_static/media/chapter_6/section_11/image6.png"  />，或使用快捷键"**Ctrl+Alt+T**"，打开命令行终端。
+1.  启动虚拟机，点击系统任务栏的图标<img src="../_static/media/chapter_6/section_11/image5.png" class="width:40px" />，并点击图标<img src="../_static/media/chapter_6/section_11/image6.png" class="width:40px" />，或使用快捷键"**Ctrl+Alt+T**"，打开命令行终端。
 
 2.  输入指令"**cd /mnt/hgfs/Share/**"，并按下回车，进入共享文件夹。
 
@@ -4361,10 +4361,10 @@ cv.destroyAllWindows()
 
 8. **读取图像，处理图像，显示图像和关闭窗口：**
 
-读取图像：使用**imread(image)**函数读取图像，参数为图像名称。
+读取图像：使用**imread(image)** 函数读取图像，参数为图像名称。
 
-处理图像：调用**harris(image)**函数处理图像，传入处理的图像参数。
+处理图像：调用**harris(image)** 函数处理图像，传入处理的图像参数。
 
-显示图像：使用**imshow(title,src)**函数显示处理结果图像，参数是窗口的标题和显示的图像。
+显示图像：使用**imshow(title,src)** 函数显示处理结果图像，参数是窗口的标题和显示的图像。
 
 关闭窗口：使用waitKey函数等待按键按下，再调用**destroyAllWindows**关闭显示窗口。
