@@ -13,6 +13,7 @@
    docs/4_ros_basics_course.md
    docs/5_pi5_and_expansion.md
    docs/6_opencv.md
+   docs/7_network_configuration.md
 
 
 
