@@ -7,7 +7,7 @@
    :maxdepth: 2
    :caption: Develop basic curriculum
 
-   docs/1_linux_fundamentals _course.md
+   docs/1_linux_fundamentals.md
    docs/2_python_basics_course.md
    docs/3_docker_container_basics_course.md
    docs/4_ros_basics_course.md
