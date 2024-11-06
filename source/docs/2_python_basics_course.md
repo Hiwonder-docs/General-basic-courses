@@ -4,7 +4,7 @@
 
 ### 1.1 Python介绍
 
-1. **面向对象概述**
+- ####  1.1.1 面向对象概述
 
 Python是一种面向对象的计算机程序设计语言，而面向对象（Object Oriented）是一种软件开发方式，是一种编程范式。面向对象是相对于面向过程（Procedure Oriented）来讲的，两者的编程思想如下：
 
@@ -17,17 +17,17 @@ Python是一种面向对象的计算机程序设计语言，而面向对象（Ob
 
 面向过程的设计思路如下：
 
-- 分析解决方法，将其分为九个步骤：开始游戏、落黑子、绘制画面、判断输赢、落白子、绘制画面、判断输赢、返回步骤、输出结果；
+(1) 分析解决方法，将其分为九个步骤：开始游戏、落黑子、绘制画面、判断输赢、落白子、绘制画面、判断输赢、返回步骤、输出结果；
 
-- 用函数依次实现上述步骤，并在主函数内依次调用各个步骤的函数。
+(2) 用函数依次实现上述步骤，并在主函数内依次调用各个步骤的函数。
 
 而面向对象的设计思路如下：
 
-- 将五子棋游戏分为3个对象：黑白双方、棋盘系统（负责绘制画面）、规则系统（负责判断输赢）；
+(1) 将五子棋游戏分为3个对象：黑白双方、棋盘系统（负责绘制画面）、规则系统（负责判断输赢）；
 
-- 为所有对象赋予属性、行为。第一类对象（黑白双方）负责接受用户输入，并将棋子布局的变化告知第二类对象（棋盘系统）。第二类对象（棋盘系统）接收变化信息后，将其显示于屏幕，同时利用第三类对象（规则系统）对棋局进行判定。
+(2) 为所有对象赋予属性、行为。第一类对象（黑白双方）负责接受用户输入，并将棋子布局的变化告知第二类对象（棋盘系统）。第二类对象（棋盘系统）接收变化信息后，将其显示于屏幕，同时利用第三类对象（规则系统）对棋局进行判定。
 
-2.  **Python概述**
+- #### 1.1.2 Python概述
 
 Python是一种跨平台的计算机程序设计语言，它的第一个公开发行版发布于1991年。"Python"这个名字源于创始人Guido van Rossum喜欢的戏剧团体Monty Python。
 
@@ -39,19 +39,19 @@ Python的语法、动态类型和其解释型语言的本质，使它成为多�
 Python2.0版本自2020年起已停止维护，因此建议使用Python3.0及以上版本。
 :::
 
-3.  **Python特点**
+- #### 1.1.3 Python特点
 
-- 易于学习：Python有相对较少的关键字，结构简单，语法定义明确。
+(1) 易于学习：Python有相对较少的关键字，结构简单，语法定义明确。
 
-- 易于阅读、维护：Python代码定义清晰，源代码容易维护。
+(2) 易于阅读、维护：Python代码定义清晰，源代码容易维护。
 
-- 运行速度快：Python的底层与很多标准库、第三方库是用C语言写的，运行速度非常快。
+(3) 运行速度快：Python的底层与很多标准库、第三方库是用C语言写的，运行速度非常快。
 
-- 免费、开源。
+(4) 免费、开源。
 
-- 丰富的库：Python具备庞大的标准库，可用于处理各种工作，包括正则表达式、文档生成、单元测试、线程、数据库、网页浏览器、CGI、FTP和其他与系统有关的操作。
+(5) 丰富的库：Python具备庞大的标准库，可用于处理各种工作，包括正则表达式、文档生成、单元测试、线程、数据库、网页浏览器、CGI、FTP和其他与系统有关的操作。
 
-- 可移植：由于Python的开源本质，它已经被移植在许多平台上，如Linux、Windows等。
+(6) 可移植：由于Python的开源本质，它已经被移植在许多平台上，如Linux、Windows等。
 
 ### 1.2 查看Python
 
@@ -59,29 +59,27 @@ Python2.0版本自2020年起已停止维护，因此建议使用Python3.0及以�
 本套Python教程的操作是基于系统Ubuntu18.04所进行的，该系统自带Python3.6.9。为避免在后续学习过程中因版本差异出现问题，建议用户保留Python3.6.9版本，对本节内容仅做了解即可。
 :::
 
-- 输入指令"**python3 -V**"，并按下回车，即可查看当前的Python版本。
+输入指令"**python3 -V**"，并按下回车，即可查看当前的Python版本。
 
-```commandline
+```bash
 python3 -V
 ```
 
-<img src="../_static/media/chapter_2/section_1/image1.png" style="width:700px" />
+### 1.3 PyCharm安装方法
 
-### 1.3 pyCharm安装方法
+为了方便学习python语言，本节会对PyCharm编辑器的安装进行教学。
 
-为了方便学习python语言，本节会对pyCharm编辑器的安装进行教学。
+- #### 1.3.1 下载PyCharm
 
-- #### 1.3.1 下载pyCharm
+(1) 输入指令"**sudo apt install snapd snapd-xdg-open**"安装snap 安装包格式。
 
-1)  输入指令"**sudo apt install snapd snapd-xdg-open**"安装snap 安装包格式。
-
-```commandline
+```bash
 sudo apt install snapd snapd-xdg-open
 ```
 
-2)  输入指令"**snap refresh**"刷新snap。
+(2) 输入指令"**snap refresh**"刷新snap。
 
-```commandline
+```bash
 snap refresh
 ```
 
@@ -89,97 +87,95 @@ snap refresh
 如果下面的错误无法连接进行刷新，可以更换其他的源，例如清华源再进行刷新。
 :::
 
-<img src="../_static/media/chapter_2/section_1/image4.jpeg" style="width:700px"/>
+<img src="../_static/media/chapter_2/section_1/image4.jpeg" class="common_img"/>
 
-3)  输入指令"**sudo snap install pycharm-community --classic**"安装pyCharm。
+(3) 输入指令"**sudo snap install pycharm-community --classic**"安装PyCharm。
 
-```commandline
+```bash
 sudo snap install pycharm-community --classic
 ```
 
-- #### 1.3.2 打开pyCharm
+- #### 1.3.2 打开PyCharm
 
-1)  我们打开"**菜单**"点击pyCharm。
+(1) 我们打开"**菜单**"点击PyCharm。
 
 <img src="../_static/media/chapter_2/section_1/image6.png" style="width:700px" />
 
 <img src="../_static/media/chapter_2/section_1/image7.png" style="width:700px" />
 
-2)  创建并配置pyCharm工程。点击New Project新建pyCharm工程。
+(2) 创建并配置PyCharm工程。点击New Project新建PyCharm工程。
 
 <img src="../_static/media/chapter_2/section_1/image8.png" style="width:700px" />
 
-3)  选择 Previously configured interpreter并点击<img src="media/media/image9.png" style="width:50px" />。
+(3) 选择 Previously configured interpreter并点击<img src="../_static/media/chapter_2/section_1/image9.png" style="width:50px" />。
 
 <img src="../_static/media/chapter_2/section_1/image10.png" style="width:700px" />
 
-4)  选择System lnterprefter。
+(4) 选择System lnterprefter。
 
 <img src="../_static/media/chapter_2/section_1/image11.png" style="width:700px" />
 
-5)  点击"create"。
+(5) 点击"create"。
 
 <img src="../_static/media/chapter_2/section_1/image12.png" style="width:700px" />
 
-6)  最后进入下图界面，即完成。
+(6) 最后进入下图界面，即完成。
 
 <img src="../_static/media/chapter_2/section_1/image13.png" style="width:700px" />
 
-- #### 1.3.3 汉化pyCharm
+- #### 1.3.3 汉化PyCharm
 
-1)  点击"**file**"。
+(1) 点击"**file**"。
 
 <img src="../_static/media/chapter_2/section_1/image14.png" style="width:700px" />
 
-2)  点击"**settings**"。
+(2) 点击"**settings**"。
 
 <img src="../_static/media/chapter_2/section_1/image15.png" style="width:700px" />
 
-3)  选择Plugins，并在搜索栏内输入chinese，然后安装前面图中两个包。
+(3) 选择Plugins，并在搜索栏内输入chinese，然后安装前面图中两个包。
 
 <img src="../_static/media/chapter_2/section_1/image16.png" style="width:700px" />
 
-4)  若在安装时遇到图中提示，点击"**accept**"。
+(4) 若在安装时遇到图中提示，点击"**accept**"。
 
 <img src="../_static/media/chapter_2/section_1/image17.png" style="width:700px" />
 
-5)  点击"**Restart IDE**"。
+(5) 点击"**Restart IDE**"。
 
 <img src="../_static/media/chapter_2/section_1/image18.png" style="width:700px" />
 
-6)  重启pyCharm后完成汉化。
+(6) 重启PyCharm后完成汉化。
 
 <img src="../_static/media/chapter_2/section_1/image19.png" style="width:700px" />
 
-- #### 1.3.4 pyCharm的基本介绍和基本使用方法
+- #### 1.3.4 PyCharm的基本介绍和基本使用方法
 
-1)  界面基本布局如下图：
+(1) 界面基本布局如下图：
 
 <img src="../_static/media/chapter_2/section_1/image20.png" style="width:700px"
 
-2)  新建一个.py文件。先右键工程文件夹。
+(2) 新建一个.py文件。先右键工程文件夹。
 
 <img src="../_static/media/chapter_2/section_1/image21.png" style="width:700px" />
 
-3)  点击新建，选着python文件。
+(3) 点击新建，选着python文件。
 
 <img src="../_static/media/chapter_2/section_1/image22.png" style="width:700px" />
 
-4)  然后给你新建的python文件命名。
+(4) 然后给你新建的python文件命名。
 
 <img src="../_static/media/chapter_2/section_1/image23.png" style="width:700px" />
 
-5)  最后结果如下图：
+(5) 最后结果如下图：
 
 <img src="../_static/media/chapter_2/section_1/image24.png" style="width:700px" />
 
-6)  右键代码区我们可以选择运行，在输出终端可以到输出的结果。
+(6) 右键代码区我们可以选择运行，在输出终端可以到输出的结果。
 
 <img src="../_static/media/chapter_2/section_1/image25.png" style="width:700px" />
 
-<img src="../_static/media/chapter_2/section_1/image25.png" style="width:700px" />
-
-想要了解更多pyCharm的使用，请访问pyCharm官：https://www.jetbrains.com/zh-cn/pycharm/。
+想要了解更多PyCharm的使用，请访问PyCharm官：https://www.jetbrains.com/zh-cn/pycharm/。
 
 ## 2. 第一个程序
 
@@ -189,60 +185,61 @@ sudo snap install pycharm-community --classic
 
 ### 2.1 操作步骤
 
-```commandline
+```bash
 sudo apt-get install vim
 ```
 
-<img src="../_static/media/chapter_2/section_2/image3.png" style="width:700px" />
-
-1. 若出现是否继续执行的相关提示，输入"**Y**"，并按下回车。若安装过程中没有出现报错，则安装成功。
+(1) 若出现是否继续执行的相关提示，输入"**Y**"，并按下回车。若安装过程中没有出现报错，则安装成功。
 
 <img src="../_static/media/chapter_2/section_2/image4.png" style="width:700px" />
 
-2. 输入指令"**mkdir test**"，并按下回车，在当前目录新建一个名为"**test**"的文件夹。
+(2) 输入指令"**mkdir test**"，并按下回车，在当前目录新建一个名为"**test**"的文件夹。
 
-```commandline
+```bash
 mkdir test
 ```
 
 <img src="../_static/media/chapter_2/section_2/image6.png" style="width:700px" />
 
-3. 输入指令"**cd test/**"，并按下回车，进入"**test**"文件夹。
+(3) 输入指令"**cd test/**"，并按下回车，进入"**test**"文件夹。
 
-```commandline
+```bash
 cd test/
 ```
 
-4. 输入指令"**sudo apt install vim**"，并按下回车，新建一个名为"**hello**"的程序文件。
+(4) 输入指令"**sudo apt install vim**"，并按下回车，新建一个名为"**hello**"的程序文件。
 
-```commandline
+```bash
 sudo apt install vim
 ```
 
-5. 输入指令"**touch hello.py**"，并按下回车，新建一个名为"**hello**"的程序文件。
+(5) 输入指令"**touch hello.py**"，并按下回车，新建一个名为"**hello**"的程序文件。
 
-```commandline
+```bash
 touch hello.py
 ```
 
-6. 输入指令"**vim hello.py**"，并按下回车，打开程序文件。
+(6) 输入指令"**vim hello.py**"，并按下回车，打开程序文件。
 
-```commandline
+```bash
 vim hello.py
 ```
 
-7. 按下"**I**"键进入编辑模式，并输入代码"**print("Hello World")**"。
+(7) 按下"**I**"键进入编辑模式，并输入代码"**print("Hello World")**"。
 
 <img src="../_static/media/chapter_2/section_2/image11.png" style="width:700px" />
 
-8. 按下"**Esc**"键，输入"**:wq**"并回车，进行保存与退出。
+(8) 按下"**Esc**"键，输入"**:wq**"并回车，进行保存与退出。
 
-```commandline
+```bash
 :wq
 ```
-<img src="../_static/media/chapter_2/section_2/image12.png" style="width:700px" />
 
-9. 输入指令"**python3 hello.py**"，并按下回车，运行程序文件，终端界面会打印指定字符串。
+(9) 输入指令"**python3 hello.py**"，并按下回车，运行程序文件，终端界面会打印指定字符串。
+
+```bash
+python3 hello.py
+```
 
 <img src="../_static/media/chapter_2/section_2/image13.png" style="width:700px" />
 
@@ -250,35 +247,37 @@ vim hello.py
 
 除了字符串，print()函数还可以用于输出数学表达式的结果。此处以**在程序文件内添加包含数学表达式的print()函数**为例，具体操作步骤如下：
 
-1. 启动虚拟机，点击系统任务栏的图标<img src="../_static/media/chapter_2/section_2/image1.png" style="width:50px" />，并点击图标<img src="../_static/media/chapter_2/section_2/image2.png" style="width:50px" />，或使用快捷键"**Ctrl+Alt+T**"，打开命令行终端。
+(1) 启动虚拟机，点击系统任务栏的图标<img src="../_static/media/chapter_2/section_2/image1.png" style="width:50px" />，并点击图标<img src="../_static/media/chapter_2/section_2/image2.png" style="width:50px" />，或使用快捷键"**Ctrl+Alt+T**"，打开命令行终端。
 
-2. 输入指令"**cd test/**"，并按下回车，进入"**test**"文件夹。
+(2) 输入指令"**cd test/**"，并按下回车，进入"**test**"文件夹。
 
-```commandline
+```bash
 cd test/
 ```
 
-3. 输入指令"**vim hello.py**"，并按下回车，打开程序文件。
+(3) 输入指令"**vim hello.py**"，并按下回车，打开程序文件。
 
-```commandline
+```bash
 vim hello.py
 ```
 
-4. 按下"**I**"键进入编辑模式，并输入代码"**print(100+100)**"。
+(4) 按下"**I**"键进入编辑模式，并输入代码"**print(100+100)**"。
 
 <img src="../_static/media/chapter_2/section_2/image14.png" style="width:700px" />
 
-**注意：数学表达式两端无需添加双引号。**
+:::{Note}
+数学表达式两端无需添加双引号。
+:::
 
-5. 按下"**Esc**"键，输入"**:wq**"并回车，进行保存与退出。
+(5) 按下"**Esc**"键，输入"**:wq**"并回车，进行保存与退出。
 
-```commandline
+```bash
 :wq
 ```
 
-6. 输入指令"**python3 hello.py**"，并按下回车，运行程序文件，终端界面会打印数学表达式的计算结果。
+(6) 输入指令"**python3 hello.py**"，并按下回车，运行程序文件，终端界面会打印数学表达式的计算结果。
 
-```commandline
+```bash
 python3 hello.py
 ```
 
@@ -310,7 +309,7 @@ print(*objects, sep='', end='\n', file=sys.stdout, flush=False)
 
 注释是对程序的解释和说明。Python支持两种注释类型：单行注释、多行注释。
 
-- 单行注释
+(1) 单行注释
 
 使用井号键"#"作为单行注释的符号，语法格式如下：
 
@@ -318,7 +317,7 @@ print(*objects, sep='', end='\n', file=sys.stdout, flush=False)
 # 注释内容
 ```
 
-- 多行注释
+(2) 多行注释
 
 在注释内容的开头与结尾处各自使用三个单引号"**'''**"或三个双引号"**"""**"（单引号和双引号请通过英文输入法下进行），即可对多行内容进行注释，语法格式如下：
 
@@ -360,39 +359,39 @@ Python采用PEP8作为编码规范。其中，"**PEP**"是指Python增强建议�
 
 在编码时严格遵守编码规范，能够令代码看起来更整洁、美观，有益于增加代码的可读性。下面是部分编码规则：
 
-1.  一个import导入一个模块，尽量避免一次导入多个模块。
+(1) 一个import导入一个模块，尽量避免一次导入多个模块。
 
 
 | **推荐做法** | <img src="../_static/media/chapter_2/section_3/image2.png" style="width:300px"/> |
 |:--:|:--:|
 | **不推荐做法** | <img src="../_static/media/chapter_2/section_3/image3.png" style="width:300px"/> |
 
-2.  不在行尾添加分号"**;**"，不将两条命令放置在同一行。
+(2) 不在行尾添加分号"**;**"，不将两条命令放置在同一行。
 
 | **推荐做法** | <img src="../_static/media/chapter_2/section_3/image4.png" style="width:300px"/> |
 |:--:|:--:|
 | **不推荐做法** | <img src="../_static/media/chapter_2/section_3/image5.png" style="width:300px"/> |
 
-3.  每行的字符数尽量不多于80，可将命令分为多行，并使用小括号"**()**"进行连接。此外，不推荐使用反斜杠"**\\**"连接多行内容。
+(3) 每行的字符数尽量不多于80，可将命令分为多行，并使用小括号"**()**"进行连接。此外，不推荐使用反斜杠"**\\**"连接多行内容。
 
 
 | **推荐做法** | <img src="../_static/media/chapter_2/section_3/image6.png" style="width:500px" /> |
 |:--:|:--:|
 | **不推荐做法** | <img src="../_static/media/chapter_2/section_3/image7.png" style="width:500px" /> |
 
-4.  使用必要的空行可以增加代码的可读性。
+(4) 使用必要的空行可以增加代码的可读性。
 
-5.  通常情况下，运算符两侧、函数参数之间以及逗号两侧，都建议使用空格进行分隔。
+(5) 通常情况下，运算符两侧、函数参数之间以及逗号两侧，都建议使用空格进行分隔。
 
 ### 3.4 标识符命名规范
 
 标识符的主要作用就是作为变量、函数、类、模块以及其他对象的名称。在Python中，标识符的命名需要遵守一定的命令规则，例如：
 
-1.  标识符由字符（A~Z、a~z）、下划线"**\_**"和数字组成，但不能使用数字作为第一个字符。
+(1) 标识符由字符（A~Z、a~z）、下划线"**\_**"和数字组成，但不能使用数字作为第一个字符。
 
-2.  标识符不能和Python中的关键字/保留字相同，可以查看下面的"**5.关键字/保留字**"的相关介绍。
+(2) 标识符不能和Python中的关键字/保留字相同，可以查看下面的"**5.关键字/保留字**"的相关介绍。
 
-3.  标识符中不能包含空格、"**@**"、"**%**"和"**\$**"等特殊字符。
+(3) 标识符中不能包含空格、"**@**"、"**%**"和"**\$**"等特殊字符。
 
 结合上述三点规则，下表列举了部分命名合法的标识符与不合法的标识符：
 
@@ -400,9 +399,9 @@ Python采用PEP8作为编码规范。其中，"**PEP**"是指Python增强建议�
 |:--:|:--:|
 | **命名不合法的标识符** | <img src="../_static/media/chapter_2/section_3/image9.png" style="width:400px" /> |
 
-4.  标识符中的字母是严格区分大小写的。以"**num**"、"**Num**"和"**NUM**"为例，这三个变量是完全独立、毫无关联的。
+(4) 标识符中的字母是严格区分大小写的。以"**num**"、"**Num**"和"**NUM**"为例，这三个变量是完全独立、毫无关联的。
 
-5.  以下划线"\_"为开头的标识符具备特殊含义，除非特定场景需要，应避免使用以下划线开头的标识符。
+(5) 以下划线"\_"为开头的标识符具备特殊含义，除非特定场景需要，应避免使用以下划线开头的标识符。
 
 | **标识符** | **含义** | **例子** |
 |:--:|:--:|:--:|
@@ -410,21 +409,21 @@ Python采用PEP8作为编码规范。其中，"**PEP**"是指Python增强建议�
 | 以双下划线开头 | 类的私有成员 | \_\_add |
 | 以双下划线作为开头和结尾 | 专用标识符 | \_\_init\_\_ |
 
-6.  Python支持使用汉字作为标识符，但为了避免出现奇怪错误，应尽量避免如此命名标识符。
+(6) Python支持使用汉字作为标识符，但为了避免出现奇怪错误，应尽量避免如此命名标识符。
 
 除了上述规则，在不同场景下，标识符的命名也有对应的规范需要注意，例如：
 
-- 用作模块名时，应尽量短小，且全部使用小写字母，可以使用下划线进行分割，如"game_mian"、"game_register"。
+① 用作模块名时，应尽量短小，且全部使用小写字母，可以使用下划线进行分割，如"game_mian"、"game_register"。
 
-- 用作包的名称时，应尽量短小，全部使用小写字母，如"com.mr"、"com.mr.book"，不推荐使用下划线。
+② 用作包的名称时，应尽量短小，全部使用小写字母，如"com.mr"、"com.mr.book"，不推荐使用下划线。
 
-- 用作类名时，应采用单词首字母大写的形式。如"Book"定义一个图书类。
+③ 用作类名时，应采用单词首字母大写的形式。如"Book"定义一个图书类。
 
-- 用作模块内部的类名时，可采用"下划线+首字母大写"的形式，如"\_Book"。
+④ 用作模块内部的类名时，可采用"下划线+首字母大写"的形式，如"\_Book"。
 
-- 用作函数名、类中的属性名和方法名时，应全部使用小写字母，多个单词之间可以用下划线进行分割。
+⑤ 用作函数名、类中的属性名和方法名时，应全部使用小写字母，多个单词之间可以用下划线进行分割。
 
-- 用作常量的名称时，应全部使用大写字母，单词之间可以用下划线进行分割。
+⑥ 用作常量的名称时，应全部使用大写字母，单词之间可以用下划线进行分割。
 
 ### 3.5 关键字/保留字
 
@@ -432,23 +431,33 @@ Python采用PEP8作为编码规范。其中，"**PEP**"是指Python增强建议�
 
 在Python交互式编程环境内可以查看Python的保留字，具体操作步骤如下：
 
-1.  打开虚拟机，启动系统。点击系统任务栏的图标<img src="../_static/media/chapter_2/section_3/image10.png" style="width:50px" />，并点击图标<img src="../_static/media/chapter_2/section_3/image11.png" style="width:50px" />，或使用快捷键"**Ctrl+Alt+T**"，打开命令行终端。
+(1) 打开虚拟机，启动系统。点击系统任务栏的图标<img src="../_static/media/chapter_2/section_3/image10.png" style="width:50px" />，并点击图标<img src="../_static/media/chapter_2/section_3/image11.png" style="width:50px" />，或使用快捷键"**Ctrl+Alt+T**"，打开命令行终端。
 
-2.  输入指令"**python3**"，并按下回车，进入Python交互式编程环境。
+(2) 输入指令"**python3**"，并按下回车，进入Python交互式编程环境。
 
-<img src="../_static/media/chapter_2/section_3/image12.png" style="width:700px" />
+```bash
+python3
+```
 
-3.  输入指令"**import keyword**"，并按下回车，导入模块"**keyword**"。
+(3) 输入指令"**import keyword**"，并按下回车，导入模块"**keyword**"。
 
-<img src="../_static/media/chapter_2/section_3/image13.png" style="width:700px" />
+```bash
+import keyword
+```
 
-4.  输入指令"**keyword.kwlist**"，并按下回车，即可查看Python的所有保留字。
+(4) 输入指令"**keyword.kwlist**"，并按下回车，即可查看Python的所有保留字。
+
+```bash
+keyword.kwlist
+```
 
 <img src="../_static/media/chapter_2/section_3/image14.png" style="width:700px" />
 
-5.  输入指令"**exit()**"，并按下回车，即可退出Python交互式编程环境。
+(5) 输入指令"**exit()**"，并按下回车，即可退出Python交互式编程环境。
 
-<img src="../_static/media/chapter_2/section_3/image15.png" style="width:700px" />
+```bash
+exit()
+```
 
 :::{Note}
 Python严格区分大小写的规则同样适用于保留字，即"if"是保留字，但"IF"、"iF"和"If"不是保留字。
@@ -464,35 +473,35 @@ Python3中的数据类型分为六大类：数字（Number）、字符串（Stri
 在Python中，可以利用type()函数查看变量的类型。
 :::
 
-1. **数字（Number）**
+**(1)  数字（Number）**
 
 表示数字或数值的数据类型称为数字类型。数字类型包含以下四种：
 
-- 整型（int）：表现形式有二进制、八进制、十进制和十六进制。
+① 整型（int）：表现形式有二进制、八进制、十进制和十六进制。
 
-- 浮点型（float）：一般以十进制表示，由整数和小数组成。每个浮点型数据占8个字节，即64位。
+② 浮点型（float）：一般以十进制表示，由整数和小数组成。每个浮点型数据占8个字节，即64位。
 
-- 复数类型（complex）：由实部和虚部组成，实部部分和虚部部分都是浮点型。
+③ 复数类型（complex）：由实部和虚部组成，实部部分和虚部部分都是浮点型。
 
-- 布尔类型（bool）：仅有"**True**"和"**False**"两个取值，"**True**"对应整数"**1**"，"**False**"对应整数"**0**"。
+④ 布尔类型（bool）：仅有"**True**"和"**False**"两个取值，"**True**"对应整数"**1**"，"**False**"对应整数"**0**"。
 
-2. **字符串（String）**
+**(2) 字符串（String）**
 
 一个字符串就是若干个字符的集合。在Python语言中，字符串的表示方法有三种：
 
-- 单引号
+① 单引号
 
 ```python
 '
 ```
 
-- 双引号
+② 双引号
 
 ```python
 "
 ```
 
-- 三重引号
+③ 三重引号
 
 ```python
 '''
@@ -504,7 +513,7 @@ Python3中的数据类型分为六大类：数字（Number）、字符串（Stri
 当字符串内出现引号，需要对其进行转义处理，即在引号前添加反斜杠"\\，以免出现语法错误。
 :::
 
-3. **列表（List）**
+**(3) 列表（List）**
 
 列表是Python中的一种序列结构，可以存储任意类型的数据，如整数、小数、字符串、列表、元组等，其创建格式如下：
 
@@ -516,7 +525,7 @@ Python3中的数据类型分为六大类：数字（Number）、字符串（Stri
 
 列表的每一个元素都对应一个整数型的索引值，可以通过索引值来得到相应的元素值，进而对其进行修改与删除。
 
-4. **元组（Tuple）**
+**(4) 元组（Tuple）**
 
 元组是Python中另一种重要的序列结构，和列表类似，其创建格式如下：
 
@@ -526,7 +535,7 @@ Python3中的数据类型分为六大类：数字（Number）、字符串（Stri
 
 与列表不同，元组是不可变序列，不支持修改或删除元素值。此外，元组内只包含一个元素时，需要在元素后面添加逗号，否则括号会被当作运算符使用。
 
-5. **字典（Dictionary）**
+**(5) 字典（Dictionary）**
 
 字典是一种无序的、可变的序列，其创建格式如下：
 
@@ -538,7 +547,7 @@ Python3中的数据类型分为六大类：数字（Number）、字符串（Stri
 
 字典的元素可以是列表、元组、字典等任意数据类型，但键（key）值必须使用不可变类型。此外，在同一个字典变量中，键（key）值必须是唯一的。
 
-6. **集合（Set）**
+**(6) 集合（Set）**
 
 集合用于存储不重复的元素，其创建格式如下：
 
@@ -588,17 +597,17 @@ Python3中的数据类型分为六大类：数字（Number）、字符串（Stri
 
 Python支持通过保留字"**not**"、"**and**"和"**or**"对判断条件进行逻辑组合。
 
-1.  not：表示单个条件的"**否**"关系。若"**条件**"的布尔属性为"**True**"，则"**not 条件**"的布尔属性为"**False**"；若"条件"的布尔属性为"**False**"，则"**not 条件**"的布尔属性为"**True**"。
+(1) not：表示单个条件的"**否**"关系。若"**条件**"的布尔属性为"**True**"，则"**not 条件**"的布尔属性为"**False**"；若"条件"的布尔属性为"**False**"，则"**not 条件**"的布尔属性为"**True**"。
 
-2.  and：表示多个条件之间的"**与**"关系。当且仅当使用and连接的所有条件的布尔属性都为"**True**"时，逻辑表达式的布尔属性为"**True**"，否则为"**False**"。
+(2) and：表示多个条件之间的"**与**"关系。当且仅当使用and连接的所有条件的布尔属性都为"**True**"时，逻辑表达式的布尔属性为"**True**"，否则为"**False**"。
 
-3.  or：表示多个条件之间的"**或**"关系。当且仅当使用or连接的所有条件的布尔属性都是"**False**"时，逻辑表达式的布尔属性为"**False**"，否则为"**True**"。
+(3) or：表示多个条件之间的"**或**"关系。当且仅当使用or连接的所有条件的布尔属性都是"**False**"时，逻辑表达式的布尔属性为"**False**"，否则为"**True**"。
 
 ### 4.3 选择结构
 
 条件语句可分为三种形式：单分支选择结构、双分支选择结构和多分支选择结构。
 
-1)  单分支选择结构
+- #### 4.3.1单分支选择结构
 
 单分支选择结构的语法格式和执行流程如下：
 
@@ -608,7 +617,7 @@ Python支持通过保留字"**not**"、"**and**"和"**or**"对判断条件进行
 
 若if语句中的判断条件成立，则依次执行代码块1和代码块2；否则，直接跳过if语句后的代码块1，执行代码块2。
 
-2)  双分支选择结构
+- #### 4.3.2 双分支选择结构
 
 双分支选择结构的语法格式和执行流程如下：
 
@@ -618,20 +627,19 @@ Python支持通过保留字"**not**"、"**and**"和"**or**"对判断条件进行
 
 若if语句中的判断条件成立，则执行代码块1；若判断条件不成立，则执行代码块2。
 
-3)  多分支选择结构
+- #### 4.2.3 多分支选择结构
 
 多分支选择结构的语法格式和执行流程如下：
-
 
 | **语法格式** | **执行流程** |
 |:--:|:--:|
 | <img src="../_static/media/chapter_2/section_4/image5.png" style="width:180px" /> | <img src="../_static/media/chapter_2/section_4/image6.png" style="width:600px" /> |
 
-若if语句中的判断条件1成立，则执行代码块1。
+(1) 若if语句中的判断条件1成立，则执行代码块1。
 
-若判断条件1不成立，则依次对elif语句中的判断条件进行判断，当出现成立的判断条件，则执行该条件对应的代码块。
+(2) 若判断条件1不成立，则依次对elif语句中的判断条件进行判断，当出现成立的判断条件，则执行该条件对应的代码块。
 
-若if语句和elif语句中的判断条件皆不成立，则执行代码块n+1。
+(3) 若if语句和elif语句中的判断条件皆不成立，则执行代码块n+1。
 
 ### 4.4 实验步骤
 
@@ -645,17 +653,17 @@ Python支持通过保留字"**not**"、"**and**"和"**or**"对判断条件进行
 输入指令时需严格区分大小写，且可以使用"Tab"键补齐关键字。
 :::
 
-1.  启动虚拟机，点击系统任务栏的图标<img src="../_static/media/chapter_2/section_4/image7.png" style="width:50px" />，并点击图标<img src="../_static/media/chapter_2/section_4/image8.png" style="width:50px" />，或使用快捷键"**Ctrl+Alt+T**"，打开命令行终端。
+(1) 启动虚拟机，点击系统任务栏的图标<img src="../_static/media/chapter_2/section_4/image7.png" style="width:50px" />，并点击图标<img src="../_static/media/chapter_2/section_4/image8.png" style="width:50px" />，或使用快捷键"**Ctrl+Alt+T**"，打开命令行终端。
 
-2.  输入指令"**cd /mnt/hgfs/Share/**"，并按下回车，进入共享文件夹。
+(2) 输入指令"**cd /mnt/hgfs/Share/**"，并按下回车，进入共享文件夹。
 
-```commandline
+```bash
 cd /mnt/hgfs/Share/
 ```
 
-3.  输入指令"**python3 conditional_statement.py**"，并按下回车，运行例程。
+(3) 输入指令"**python3 conditional_statement.py**"，并按下回车，运行例程。
 
-```commandline
+```bash
 python3 conditional_statement.py
 ```
 
@@ -686,7 +694,7 @@ else:
     print("肥胖")
 ```
 
-- **数据输入**
+**(1) 数据输入**
 
 通过调用input()函数来接收输入数据，函数括号内为提示信息。
 
@@ -695,7 +703,7 @@ height = float(input("height(m):"))
 weight = float(input("weight(kg):"))
 ```
 
-- **数据计算**
+**(2) 数据计算**
 
 根据BMI指数的计算公式，对输入数值进行处理，并通过print()函数将计算结果打印至终端界面。
 
@@ -720,7 +728,7 @@ print(\*objects, sep=’ ’, end=’\n’, file=sys.stdout, flush=False)
 
 第五个参数"**flush**"用于控制输出缓存，默认值为"**False**"。
 
-- **范围判断**
+**(3) 范围判断**
 
 由于判别结果多于两个，此处需要采用多分支选择结构，即if-elif-else语句。
 
@@ -735,13 +743,13 @@ else:
     print("肥胖")
 ```
 
-1.  当BMI指数小于18.5，打印评估结果"**体重过轻**"；
+① 当BMI指数小于18.5，打印评估结果"**体重过轻**"；
 
-2.  当BMI指数大于或等于18.5，且小于24.9，打印评估结果"**正常范围，注意保持**"；
+② 当BMI指数大于或等于18.5，且小于24.9，打印评估结果"**正常范围，注意保持**"；
 
-3.  当BMI指数大于或等于24.9，且小于29.9，打印评估结果"**体重过重**"；
+③ 当BMI指数大于或等于24.9，且小于29.9，打印评估结果"**体重过重**"；
 
-4.  当BMI指数大于或等于29.9，打印评估结果"**肥胖**"。
+④ 当BMI指数大于或等于29.9，打印评估结果"**肥胖**"。
 
 ## 5. Python循环语句
 
@@ -751,7 +759,7 @@ else:
 
 循环语句包含"**while**"和"**for**"，可以用于重复进行某些操作。
 
-- #### while循环
+- #### 5.1.1 while循环
 
 while循环的语法格式和执行流程如下：
 
@@ -761,7 +769,7 @@ while循环的语法格式和执行流程如下：
 
 当循环条件为"**True**"，则循环执行while循环中的代码块，直至循环条件为"**False**"，循环结束。条件持续为"**True**"的while循环被称为"**死循环**"。
 
-- #### for循环
+- #### 5.1.2 for循环
 
 for循环的语法格式和执行流程如下：
 
@@ -777,7 +785,7 @@ for循环的语法格式和执行流程如下：
 
 当需要中断循环，或跳过本次循环，执行下一次循环，循环控制语句便可派上用场。循环控制语句包含"**break**"、"**continue**"和"**pass**"。
 
-- #### break语句
+- #### 5.2.1 break语句
 
 break语句用于跳出整个循环，其语法格式和执行流程如下：
 
@@ -788,7 +796,7 @@ break语句用于跳出整个循环，其语法格式和执行流程如下：
 
 当执行到判断条件语句，若判断条件为"**True**"，则跳出整个循环；若判断条件为"**False**"，则继续执行代码块2，继续循环。
 
-- #### continue语句
+- #### 5.2.2 continue语句
 
 continue语句用于跳出本次循环，继续执行下次循环，其语法格式和执行流程如下：
 
@@ -799,7 +807,7 @@ continue语句用于跳出本次循环，继续执行下次循环，其语法格
 
 当执行到判断条件语句，若判断条件为"**True**"，则直接结束本次循环，进入新一轮循环；若判断条件为"**False**"，则继续执行代码块2，完成本次循环。
 
-- #### pass语句
+- #### 5.2.3 pass语句
 
 pass语句即为空语句，不执行任何动作，用于保持程序结构的完整性。
 
@@ -811,21 +819,21 @@ pass语句即为空语句，不执行任何动作，用于保持程序结构的�
 
 关于共享文件夹的配置方法，可参考目录"**第2章 Linux系统简介及使用入门-\>Linux基础课程-\>第3课 Linux系统安装及换源方法**"下的文档。
 
-```commandline
+```bash
 输入指令时需严格区分大小写，且可以使用"Tab"键补齐关键字。
 ```
 
-1.  启动虚拟机，点击系统任务栏的图标<img src="../_static/media/chapter_2/section_5/image13.png" style="width:50px" />，并点击图标<img src="../_static/media/chapter_2/section_5/image14.png" style="width:50px" />，或使用快捷键"**Ctrl+Alt+T**"，打开命令行终端。
+(1) 启动虚拟机，点击系统任务栏的图标<img src="../_static/media/chapter_2/section_5/image13.png" style="width:50px" />，并点击图标<img src="../_static/media/chapter_2/section_5/image14.png" style="width:50px" />，或使用快捷键"**Ctrl+Alt+T**"，打开命令行终端。
 
-2.  输入指令"**cd /mnt/hgfs/Share/**"，并按下回车，进入共享文件夹。
+(2) 输入指令"**cd /mnt/hgfs/Share/**"，并按下回车，进入共享文件夹。
 
-```commandline
+```bash
 cd /mnt/hgfs/Share/c
 ```
 
-3.  输入指令"**python3 loop_statement.py**"，并按下回车，运行例程。
+(3) 输入指令"**python3 loop_statement.py**"，并按下回车，运行例程。
 
-```commandline
+```bash
 python3 loop_statement.py
 ```
 
@@ -859,7 +867,7 @@ for c in string:
 
 ### 5.6 计算数值的阶乘
 
-- **数据输入**
+**5.6.1 数据输入**
 
 通过调用iuput()函数来接收输入数据，函数括号内为提示信息。
 
@@ -867,7 +875,7 @@ for c in string:
 n = int(input("请输入一个整数："))
 ```
 
-- **变量创建**
+**5.6.2 变量创建**
 
 创建两个变量，用于后续的计算。其中，"**fact**"用于存储当前阶乘值。
 
@@ -876,7 +884,7 @@ fact = 1
 i = 1
 ```
 
-- **while循环**
+**5.6.3 while循环**
 
 利用while循环语句计算指定整数的阶乘。循环过程中，"**i**"值不断累加，当该值大于输入的整数时，循环结束。随后，通过调用print()函数，将计算结果打印至终端界面。
 
@@ -905,7 +913,7 @@ print(\*objects, sep=’ ’, end=’\n’, file=sys.stdout, flush=False)
 
 ### 5.7 打印字符串元素
 
-- **数据输入**
+**5.7.1 数据输入**
 
 通过调用iuput()函数来接收输入数据，函数括号内为提示信息。
 
@@ -913,7 +921,7 @@ print(\*objects, sep=’ ’, end=’\n’, file=sys.stdout, flush=False)
 string = input("请输入一个字符串：")
 ```
 
-- **for循环**
+**5.7.2 for循环**
 
 利用for循环语句即可依次获取输入字符串的各个元素。随后，通过在循环结构内调用print()函数，便可实现输入字符串的拆分打印。
 
@@ -943,19 +951,19 @@ def 函数名(参数列表):
     函数体
 ```
 
-1.  函数代码块以关键字"**def**"开头，后接函数标识符名称和形参列表；
+(1) 函数代码块以关键字"**def**"开头，后接函数标识符名称和形参列表；
 
-2.  为方便后期维护，函数标识符名称最好能够体现出函数的功能；
+(2) 为方便后期维护，函数标识符名称最好能够体现出函数的功能；
 
-3.  参数列表用于设置该函数可接收的参数，多个参数之间用逗号"**,**"分隔；
+(3) 参数列表用于设置该函数可接收的参数，多个参数之间用逗号"**,**"分隔；
 
-4.  任何传入的参数和自变量必须放在括号"**()**"内；
+(4) 任何传入的参数和自变量必须放在括号"**()**"内；
 
-5.  函数内容以冒号"**:**"起始，且严格统一缩进；
+(5) 函数内容以冒号"**:**"起始，且严格统一缩进；
 
-6.  函数的第一行语句可选择性地使用文档字符串，即函数说明；
+(6) 函数的第一行语句可选择性地使用文档字符串，即函数说明；
 
-7.  函数都有返回值，默认返回"**None**"。
+(7) 函数都有返回值，默认返回"**None**"。
 
 :::{Note}
 创建函数时，即使函数不包含任何参数，函数名后面的小括号"()"仍需保留。
@@ -965,11 +973,11 @@ def 函数名(参数列表):
 
 在编程语言中，函数定义时采用形参，调用时采用实参。两者的功能是数据传送。
 
-1.  形参（parameter）
+**6.3.1 形参（parameter)**
 
 形参，即形式参数，不是实际存在的变量，因此又称虚拟变量。形参是在定义函数名和函数体时使用的参数，用于接收调用该函数时传入的参数，其作用域一般仅限函数体内部。
 
-2.  实参（argument）
+**6.3.2 实参（argument）**
 
 实参，即实际参数，是在调用时传递给函数的参数，可以是常量、变量、表达式、函数等，其作用域根据实际设置而定。
 
@@ -1038,7 +1046,7 @@ calculate()函数内有两个返回值，分别是"**x+y**"和"**x\*y**"，调�
 
 函数参数分为可变类型和不可变类型，两者的调用结果是不同的。
 
-- #### 可变类型
+- #### 6.5.1 可变类型
 
 可变类型的调用类似C++的引用传递。如果传递的参数是可变类型，如列表、字典等，函数内部对传入参数的修改会影响到外部变量。
 
@@ -1056,7 +1064,7 @@ print("函数外变量的值：",list_01)
 
 <img src="../_static/media/chapter_2/section_6/image4.png" style="width:700px" />
 
-- #### 不可变类型
+- #### 6.5.2 不可变类型
 
 不可变类型的调用类似C++的值传递。如果传递的参数是不可变类型，如整型、字符串、元组等，函数内部对传入参数的修改不会影响到外部变量。
 
@@ -1076,7 +1084,7 @@ print(b)
 
 ### 6.6 参数类型
 
-- #### 位置参数
+- #### 6.6.1 位置参数
 
 调用函数时，每个实参都按照位置顺序关联至对应的形参，这种关联方式即为位置参数。
 
@@ -1092,7 +1100,7 @@ describe_student('Jack', '18')
 
 <img src="../_static/media/chapter_2/section_6/image6.png" style="width:700px" />
 
-- #### 默认参数
+- #### 6.6.2 默认参数
 
 自定义函数时，可以为每个形参指定默认值。调用函数时，若给形参提供了实参，则采用指定实参；否则，采用形参的默认值。
 
@@ -1109,7 +1117,7 @@ describe_student('Jack')
 
 <img src="../_static/media/chapter_2/section_6/image7.png" style="width:700px" />
 
-- #### 不定长参数
+- #### 6.6.3 不定长参数
 
 在Python语言中，函数还可以定义不定长参数，也叫可变参数。在标识符前面添加"**\***"即可将对应参数定义为不定长参数。
 
@@ -1128,7 +1136,7 @@ print(calculate())
 
 <img src="../_static/media/chapter_2/section_6/image8.png" style="width:700px" />
 
-- #### 关键字参数
+- #### 6.6.4 关键字参数
 
 关键字参数就是采用"**形参名称-值**"对的方式进行参数传递。通过此方式指定函数实参时，不再需要与形参的位置完全一致，只需确保参数名称正确。
 
@@ -1144,8 +1152,7 @@ def describe_student(person_name,student_age):
 
 <img src="../_static/media/chapter_2/section_6/image9.png" style="width:700px" />
 
-
-- #### 命名关键字参数
+- #### 6.6.5 命名关键字参数
 
 当需要限制参数只能按关键字进行传递时，可以采用命名关键字参数。在自定义函数时，用"**\\**"分隔形参，"**\\**"后面的形参即为命名关键字参数。
 
@@ -1172,19 +1179,19 @@ describe student('Jack', '18', live_city='Guangzhou')
 
 将能够实现某一特定功能的代码封装为一个独立的模块，这样既可以方便其它程序或脚本导入及使用，又可以有效避免函数名和变量名发生冲突。模块的来源有三种：
 
-1.  Python内置模块（标准库）；
+(1) Python内置模块（标准库）；
 
-2.  第三方模块；
+(2) 第三方模块；
 
-3.  自定义模块。
+(3) 自定义模块。
 
 当需要调用某个模块的函数，需要先通过import语句导入该模块后，再对函数进行调用。常用的导入方法有两种（中括号"\[\]"里的内容可省略）：
 
-1.  import 模块名称\[ as 别名\]
+(1) import 模块名称\[ as 别名\]
 
 使用这种语法格式的 import 语句，会导入指定模块中的所有成员（包括变量、函数、类等）。当需要使用模块中的成员时，需用该模块名（或别名）作为前缀。
 
-2.  from 模块名称 import 成员名称\[ as 别名\]
+(2) from 模块名称 import 成员名称\[ as 别名\]
 
 使用这种语法格式的 import 语句，只会导入模块中指定的成员，而不是全部成员。同时，当程序中使用该成员时，无需附加任何前缀，直接使用成员名（或别名）即可。
 
@@ -1202,50 +1209,50 @@ describe student('Jack', '18', live_city='Guangzhou')
 
 ### 7.2 四种容器介绍
 
-- #### 列表
+- #### 7.2.1 列表
 
-1)  语法：**\[ 123 , "456" , classObjectA , \[123,"456"\] \]**
+(1)  语法：**\[ 123 , "456" , classObjectA , \[123,"456"\] \]**
 
-2)  特征：列表使用中括号包裹，逗号隔开元素，元素类型任意，可以嵌套，可以用下标进行读写。
+(2)  特征：列表使用中括号包裹，逗号隔开元素，元素类型任意，可以嵌套，可以用下标进行读写。
 
-3)  特点：列表元素类型不要求统一，可以对每个元素进行增删改查。可以按照下标删除元素(pop)，也可以按照值删除元素(remove)，可以插入元素到某个位置(insert)，也可以追加元素到列表尾部(append)。
+(3)  特点：列表元素类型不要求统一，可以对每个元素进行增删改查。可以按照下标删除元素(pop)，也可以按照值删除元素(remove)，可以插入元素到某个位置(insert)，也可以追加元素到列表尾部(append)。
 
 ```python
 list1 = [123, "123", [123, 456]]
 ```
 
-- #### 元组
+- #### 7.2.2 元组
 
-1)  语法：**（123，456，789，100）**。
+(1) 语法：**（123，456，789，100）**。
 
-2)  特征：小括号包裹，逗号隔开元素，元素类型必须统一，可以嵌套但是满足类型统一，可以用 下标 进行读，但不可写，更不可增删。
+(2) 特征：小括号包裹，逗号隔开元素，元素类型必须统一，可以嵌套但是满足类型统一，可以用 下标 进行读，但不可写，更不可增删。
 
-3)  特点：不可变的列表，所有操作都类似列表，唯一的不同就是只能查，不能增(没有append和insert)，删(没有remove和pop)，改(不能对元素赋值)。可以认为元组是一个元素类型必须统一且不可修改的列表，只能读里面的内容。
+(3) 特点：不可变的列表，所有操作都类似列表，唯一的不同就是只能查，不能增(没有append和insert)，删(没有remove和pop)，改(不能对元素赋值)。可以认为元组是一个元素类型必须统一且不可修改的列表，只能读里面的内容。
 
 ```python
 tuple1 = (123, 456, 789)
 ```
 
-- #### 集合
+- #### 7.2.3 集合
 
-1)  语法：{ 1，"23"，classObjectA }。
+(1) 语法：{ 1，"23"，classObjectA }。
 
-2)  特征：大括号包裹，逗号隔开元素，元素类型任意，可以嵌套，可以用下标读写。基本和列表一致。
+(2) 特征：大括号包裹，逗号隔开元素，元素类型任意，可以嵌套，可以用下标读写。基本和列表一致。
 
-3)  特点：可以认为是自动除重的列表 ，且不支持排序，其他和列表没区别。
+(3) 特点：可以认为是自动除重的列表 ，且不支持排序，其他和列表没区别。
 
 
 ```python
 set1 = {123, "123"}
 ```
 
-- #### 字典
+- #### 7.2.4 字典
 
-1)  语法：{"name" ："zhangsan"， "age"：50}
+(1) 语法：{"name" ："zhangsan"， "age"：50}
 
-2)  特征：大括号包裹，逗号隔开元素，元素构成必须统一格式(由分号分隔的两部分，前半部分必须是字符串，后半部分任意)，键一定是字符串，如果发现某个元素没包含冒号，则会被当做集合处理。
+(2) 特征：大括号包裹，逗号隔开元素，元素构成必须统一格式(由分号分隔的两部分，前半部分必须是字符串，后半部分任意)，键一定是字符串，如果发现某个元素没包含冒号，则会被当做集合处理。
 
-3)  特点：最灵活的容器，不支持排序，可以嵌套，通过 \[ \] 和 get 进行元素访问，不可用下标 ，使用 pop 按键进行元素移除(没有remove)。
+(3) 特点：最灵活的容器，不支持排序，可以嵌套，通过 \[ \] 和 get 进行元素访问，不可用下标 ，使用 pop 按键进行元素移除(没有remove)。
 
 ```python
 dict1 = {"123":123, "456":"abc", {"qwe":789}}
@@ -1253,7 +1260,7 @@ dict1 = {"123":123, "456":"abc", {"qwe":789}}
 
 ### 7.3 容器基本操作
 
-- #### 列表的基本操作
+- #### 7.3.1 列表的基本操作
 
 <table class="docutils-nobg" border="1">
     <thead><tr><th>分类</th><th>关键字/函数/方法</th><th>说明</th></tr></thead>
@@ -1272,14 +1279,13 @@ dict1 = {"123":123, "456":"abc", {"qwe":789}}
         <tr><td>reverse()</td><td>逆序列表</td></tr>
     </tbody>
 </table>
+(1) append：添加元素到列表尾部。
 
-1. append：添加元素到列表尾部。
+(2) insert：在指定的位置插入元素，参数中前者为位置，后者为元素。
 
-2.  insert：在指定的位置插入元素，参数中前者为位置，后者为元素。
+(3) pop：弹出最后一个元素，也可指定弹出的元素位置。
 
-3. pop：弹出最后一个元素，也可指定弹出的元素位置。
-
-4.  remove：移除指定的元素。
+(4) remove：移除指定的元素。
 
 ```python
 list1 = [1, 2, 3, 4, 5, 6, 7]
@@ -1293,11 +1299,11 @@ list1.remove(7)
 print(list1)
 ```
 
-<img src="../_static/media/chapter_2/section_7/image1.png" style="width:500px" />
+<img src="../_static/media/chapter_2/section_7/image1.png" class="common_img" />
 
-5.   index：查询指定元素的位置。
+(5) index：查询指定元素的位置。
 
-6.  sort：把内容升序排序，也可改为降序排序。
+(6) sort：把内容升序排序，也可改为降序排序。
 
 ```python
 list1 = [1, 7, 3, 8, 5, 9, 4]
@@ -1306,17 +1312,17 @@ list1.sort()
 print(list1)
 ```
 
-<img src="../_static/media/chapter_2/section_7/image2.png" style="width:500px" />
+<img src="../_static/media/chapter_2/section_7/image2.png" class="common_img" />
 
-- #### 元组的基本操作
+- #### 7.3.2 元组的基本操作
 
 元组的操作类似列表，主要有以下不同：
 
-1)  元组没有 append()、 extend() 和 insert() 等方法，无法向元组中添加元素。
+(1) 元组没有 append()、 extend() 和 insert() 等方法，无法向元组中添加元素。
 
-2)  元组没有 remove() 或 pop() 方法，也无法对元组元素进行 del 操作，不能从元组中删除元素。
+(2) 元组没有 remove() 或 pop() 方法，也无法对元组元素进行 del 操作，不能从元组中删除元素。
 
-- #### 字典的基本操作
+- #### 7.3.3 字典的基本操作
 
 <table class="docutils-nobg" border="1">
     <thead><tr><th>方法</th><th>用法</th></tr></thead>
@@ -1328,12 +1334,11 @@ print(list1)
         <tr><td>items()</td><td>以列表返回可遍历的(键，值)元组数据</td></tr>
     </tbody>
 </table>
+(1) get：返回指定键的值。
 
-1)  get：返回指定键的值。
+(2) keys：返回字典中所有的键。
 
-2)  keys：返回字典中所有的键。
-
-3)  values：返回字典中所有的值。
+(3) values：返回字典中所有的值。
 
 ```python
 dect1 = {"星期一":1, "星期二":2, "星期三":3, "星期四":4, "星期五":5}
@@ -1344,9 +1349,9 @@ print(dict1.values())
 
 <img src="../_static/media/chapter_2/section_7/image3.png" style="width:700px" />
 
-4)  Update：更新已有的键值对，或添加新的键值对。
+(4) Update：更新已有的键值对，或添加新的键值对。
 
-5)  items：以列表返回可遍历的键值对元组数组。
+(5) items：以列表返回可遍历的键值对元组数组。
 
 ```python
 dict1 = {"星期一":1, "星期二":2, "星期三":3, "星期四":4, "星期五":5}
@@ -1369,25 +1374,25 @@ Python是面向对象的高级语言，在Python中一切都是对象。
 
 ### 8.2 类和对象的介绍
 
-#### 8.2.1 类
+- #### 8.2.1 类
 
 类用来描述具有相同的属性和方法的对象集合，是抽象的，类不能直接被使用。它定义了该集合中每个对象所共有的属性和方法，而对象是类的实例。
 
 例如创建一个"猫"类，猫的属性有名字，颜色，年龄等，猫的方法有吃，喝，喵喵叫等，而实例化的对象"橘猫"则会拥有这些定义的属性和方法。
 
-#### 8.2.2 对象
+- #### 8.2.2 对象
 
 对象是根据类来创建的一个具体的实例，它具有所属类的属性和方法。在Python中，所有数据类型都被视为对象，也可以自定义对象，自定义对象数据类型就是面向对象中类的概念。
 
 ### 8.3 类的定义
 
-1)  通过 class 关键字定义，类名通用习惯为首字母大写。
+(1) 通过 class 关键字定义，类名通用习惯为首字母大写。
 
-2)  \_init_函数，对类初始化，相当于构造函数，每根据类创建新实例时，Python都会自动运行它。
+(2) \_init_函数，对类初始化，相当于构造函数，每根据类创建新实例时，Python都会自动运行它。
 
-3)  self函数，隐式形参，对象本身，相当于this函数。
+(3) self函数，隐式形参，对象本身，相当于this函数。
 
-4)  属性相当于成员变量。
+(4) 属性相当于成员变量。
 
 ```python
 chass Cat():
@@ -1402,9 +1407,9 @@ chass Cat():
 
 ### 8.4 实例的创建
 
-1)  通过类名创建，输入创建所需的属性。
+(1) 通过类名创建，输入创建所需的属性。
 
-2)  可以直接调用这些属性和方法。
+(2) 可以直接调用这些属性和方法。
 
 
 ```python
@@ -1414,21 +1419,21 @@ my_cat.eat()
 my_cat.meow()
 ```
 
-<img src="../_static/media/chapter_2/section_8/image3.png" style="width:700px" />
+<img src="../_static/media/chapter_2/section_8/image3.png" class="common_img" />
 
 ### 8.5 类的属性与实例属性
 
-1)  类的\_\_init\_\_下定义的为实例属性，类中\_\_init\_\_外定义的为类属性，类外创建类的实例可以定义属于该实例的属性。
+(1) 类的\_\_init\_\_下定义的为实例属性，类中\_\_init\_\_外定义的为类属性，类外创建类的实例可以定义属于该实例的属性。
 
-2)  私有变量：如果有属性不希望被外部访问，我们可以在属性命名时以双下划线开头( \_\_ )，那么该属性就不能使用原变量名访问，即不能从实例调用。
+(2) 私有变量：如果有属性不希望被外部访问，我们可以在属性命名时以双下划线开头( \_\_ )，那么该属性就不能使用原变量名访问，即不能从实例调用。
 
 ### 8.6 类的继承和多态
 
-1)  继承：类的创建时，可以在括号内写上父类的名称，让父类的属性和方法都被继承给子类，若子类没有初始化方法，则会调用父类的初始化方法。
+(1) 继承：类的创建时，可以在括号内写上父类的名称，让父类的属性和方法都被继承给子类，若子类没有初始化方法，则会调用父类的初始化方法。
 
-2)  方法重写：如果在子类中定义的一个方法，其名称、返回类型及参数列表正好与父类中某个方法的名称、返回类型及参数列表相匹配，则为子类的方法重写了父类的方法。
+(2) 方法重写：如果在子类中定义的一个方法，其名称、返回类型及参数列表正好与父类中某个方法的名称、返回类型及参数列表相匹配，则为子类的方法重写了父类的方法。
 
-3)  多态：从一个父类派生出多个子类，可以使子类之间有不同的行为，这种行为称之为多态。更直白的说，就是子类重写父类的方法，使子类具有不同的方法实现 子类与父类拥有同一个方法，子类的方法优先级高于父类，即子类覆盖父类。
+(3) 多态：从一个父类派生出多个子类，可以使子类之间有不同的行为，这种行为称之为多态。更直白的说，就是子类重写父类的方法，使子类具有不同的方法实现 子类与父类拥有同一个方法，子类的方法优先级高于父类，即子类覆盖父类。
 
 ```python
 class Animal():
@@ -1451,7 +1456,7 @@ print("Name:" + my_mouse.name + "Age:" + my_mouse.age)
 my_mouse.eat()
 ```
 
-<img src="../_static/media/chapter_2/section_8/image5.png" style="width:500px" />
+<img src="../_static/media/chapter_2/section_8/image5.png" class="common_img" />
 
 执行后，子类实例会自动调用父类构造方法，子类会覆盖重写父类同名方法。
 
@@ -1481,19 +1486,19 @@ my_mouse.eat()
 
 ### 8.8 文件夹与文件路径
 
-1)  文件两个关键属性："文件名"（通常写成一个单词）和"路径"。
+(1) 文件两个关键属性："文件名"（通常写成一个单词）和"路径"。
 
-2)  绝对路径与相对路径："绝对路径"，总是从根文件夹开始。"相对路径"，相对于程序的当前工作目录。例如在当前目录下的"test.py"文件，相对路径是"/test.py"，绝对路径是"python/scripts/test.py"。
+(2) 绝对路径与相对路径："绝对路径"，总是从根文件夹开始。"相对路径"，相对于程序的当前工作目录。例如在当前目录下的"test.py"文件，相对路径是"/test.py"，绝对路径是"python/scripts/test.py"。
 
-3)  点（.）和点点（..）文件夹：不是真正的文件夹，而是可以在路径中使用的特殊名称。单个的句点（"点"）用作文件夹目名称时，是"这个目录"的缩写。两个句点（"点点"）意思是父文件夹。
+(3) 点（.）和点点（..）文件夹：不是真正的文件夹，而是可以在路径中使用的特殊名称。单个的句点（"点"）用作文件夹目名称时，是"这个目录"的缩写。两个句点（"点点"）意思是父文件夹。
 
 ### 8.9 文件读写操作
 
-1)  打开和关闭文件：调用 open函数传入文件名和标识符，打开文件返回一个File对象，调用 File 对象的 close()方法，可以关闭该文件。也可以使用"with"语句在结束后自动关闭文件。
+(1) 打开和关闭文件：调用 open函数传入文件名和标识符，打开文件返回一个File对象，调用 File 对象的 close()方法，可以关闭该文件。也可以使用"with"语句在结束后自动关闭文件。
 
-2)  文件读取：调用read函数将文件内容读取到对象中，可以使用readline函数每次读取一行，或者readlines函数一次读取所有行，保存在一个列表中。
+(2) 文件读取：调用read函数将文件内容读取到对象中，可以使用readline函数每次读取一行，或者readlines函数一次读取所有行，保存在一个列表中。
 
-3)  文件写入：打开文件时，可加入参数指定：读取模式（"r"）、写入模式（"w"）【从开头写】、附加模式（"a"）【在文件尾开始写】、同时读取和写入文件的模式（"r+"）。也可以直接用write方法写入。
+(3) 文件写入：打开文件时，可加入参数指定：读取模式（"r"）、写入模式（"w"）【从开头写】、附加模式（"a"）【在文件尾开始写】、同时读取和写入文件的模式（"r+"）。也可以直接用write方法写入。
 
 ```python
 filename = 'num.txt'
@@ -1504,7 +1509,7 @@ lines = file_object.readlines()
 print(lines[0])
 ```
 
-<img src="../_static/media/chapter_2/section_8/image7.png" style="width:500px"/>
+<img src="../_static/media/chapter_2/section_8/image7.png" class="common_img"/>
 
 执行后，会读取刚才写入的第一行数据。
 
@@ -1534,7 +1539,7 @@ print(lines[0])
 
 - **ValueError**：传给函数的参数类型部正确。
 
-#### 异常处理
+- #### 9.2.1 异常处理
 
 在代码被解释执行的过程中可能会抛出异常，而异常的处理则采用try....except...的方式。如果try中的代码发生异常，则会跳到expect捕获处理这个异常。
 
@@ -1554,17 +1559,17 @@ finally:
 print('END')
 ```
 
-<img src="../_static/media/chapter_2/section_9/image2.png" style="width:500px" />
+<img src="../_static/media/chapter_2/section_9/image2.png" class="common_img" />
 
-1)  try代码块为可能发生异常的代码。
+(1) try代码块为可能发生异常的代码。
 
-2)  except后面是可能发生的异常类型和处理内容。
+(2) except后面是可能发生的异常类型和处理内容。
 
-3)  except可以有多个分支，异常发生匹配到第一个except则退出，如果异常类存在子类和父类，父类异常在前面，则后面的子类异常会无法匹配到。
+(3) except可以有多个分支，异常发生匹配到第一个except则退出，如果异常类存在子类和父类，父类异常在前面，则后面的子类异常会无法匹配到。
 
-4)  else语句会在没有发生异常时执行。
+(4) else语句会在没有发生异常时执行。
 
-5)  finally语句则无论异常有没有发生，都会执行。
+(5) finally语句则无论异常有没有发生，都会执行。
 
 ## 10. Python内置函数
 
@@ -1598,13 +1603,13 @@ Python解释器也是一个程序，它给用户提供了一些常用功能，�
     </tbody>
 </table>
 
-#### 10.2.1 运算类型
+- #### 10.2.1 运算类型
 
-- **abs(x)**：abs函数用来返回一个数值的绝对值，输入的参数x可以是整数浮点数，也可以是复数。
+(1) **abs(x)**：abs函数用来返回一个数值的绝对值，输入的参数x可以是整数浮点数，也可以是复数。
 
-- **max(x，key=None)**：max函数的参数x是可迭代对象或者是多个参数，返回其中的最大的元素。max函数可以通过指定关键参数key，来返回最大值。如果有多个最大值时，则返回第一个值。
+(2) **max(x，key=None)**：max函数的参数x是可迭代对象或者是多个参数，返回其中的最大的元素。max函数可以通过指定关键参数key，来返回最大值。如果有多个最大值时，则返回第一个值。
 
-- **min(x,key=None)**：min函数同max函数的用法是一致的，min函数返回的是可迭代对象或者是多个参数中的最小值。
+(3) **min(x,key=None)**：min函数同max函数的用法是一致的，min函数返回的是可迭代对象或者是多个参数中的最小值。
 
 ```python
 print(abs(-46))
@@ -1612,15 +1617,15 @@ print(max(2, 3, 4, 5))
 print(min(2, 3, 4, 5))
 ```
 
-<img src="../_static/media/chapter_2/section_10/image3.png" style="width:500px"/>
+<img src="../_static/media/chapter_2/section_10/image3.png" class="common_img"/>
 
-- **pow(x,y, mod)**：pow函数当只有x和y两个参数时，它的作用是返回x的y次幂，当存在第三个参数mod存在时，pow函数是在x的y次幂基础上对mod进行取余。
+(4) **pow(x,y, mod)**：pow函数当只有x和y两个参数时，它的作用是返回x的y次幂，当存在第三个参数mod存在时，pow函数是在x的y次幂基础上对mod进行取余。
 
-- **round(number,ndigits)**：返回number舍入到小数点后 ndigits位精度的值。如果ndigits被省略，则返回最接近number的整数。
+(5) **round(number,ndigits)**：返回number舍入到小数点后 ndigits位精度的值。如果ndigits被省略，则返回最接近number的整数。
 
-- **sum(x, start=0)**：sum函数是将x中的数值进行从左向右的求和，然后加上start的数值，求和并返回总值。
+(6) **sum(x, start=0)**：sum函数是将x中的数值进行从左向右的求和，然后加上start的数值，求和并返回总值。
 
-- **divmod(a, b)**：divmod函数将a、b两个数值作为实参，返回a/b的商值和余数。
+(7) **divmod(a, b)**：divmod函数将a、b两个数值作为实参，返回a/b的商值和余数。
 
 ```python
 print(pow(2, 3))
@@ -1629,9 +1634,9 @@ print(sum(1, 2, 3, 4), 2)
 print(divmod(5, 2))
 ```
 
-<img src="../_static/media/chapter_2/section_10/image5.png" style="width:500px" />
+<img src="../_static/media/chapter_2/section_10/image5.png" class="common_img" />
 
-#### 10.2.2 转换类型
+- #### 10.2.2 转换类型
 
 - **int(x)**：对于输入的数字或者是字符串x，返回x的整数形式，如果x数值为空时，则返回0。
 
@@ -1645,7 +1650,7 @@ print(float(3))
 print(complex(2, 3))
 ```
 
-<img src="../_static/media/chapter_2/section_10/image7.png" style="width:500px" />
+<img src="../_static/media/chapter_2/section_10/image7.png" class="common_img" />
 
 - **bool(x)**：判断参数x是否为真，并返回True或者False。
 
@@ -1674,7 +1679,7 @@ print(memoryview(bytes(123)))
 
 <img src="../_static/media/chapter_2/section_10/image9.png" style="width:700px" />
 
-#### 10.2.3 进制转换
+- #### 10.2.3 进制转换
 
 - **bin(x)**：将输入的整数x转变为一个前缀为"0b"的二进制字符串。
 
@@ -1699,9 +1704,9 @@ print(ord('c'))
 print(chr(99))
 ```
 
-<img src="../_static/media/chapter_2/section_10/image11.png" style="width:" />
+<img src="../_static/media/chapter_2/section_10/image11.png" class="common_img" />
 
-#### 10.2.4 数值操作
+- #### 10.2.4 数值操作
 
 - **list(x)**：list函数将传入的参数改变为新的列表并进行返回，除此之外，list本身也是一个可变对象。
 
@@ -1786,7 +1791,7 @@ print(B().sonname)
 
 <img src="../_static/media/chapter_2/section_10/image17.png" style="width:700px" />
 
-#### 10.2.5 排序操作
+- #### 10.2.5 排序操作
 
 - **sorted(x, key=None, reverse=False)**：对可迭代对象x进行排序，并返回一个排序后的新的对象，key参数可以规定按照何种方式进行比较，而reverse为True时，表示按照递减的方式进行排序
 
@@ -1805,7 +1810,7 @@ print(list(reversed("abcd")))
 
 <img src="../_static/media/chapter_2/section_10/image19.png" style="width:700px" />
 
-#### 10.2.6. 序列操作
+- #### 10.2.6. 序列操作
 
 - **all(x)**：针对于可迭代对象x中的每一个元素，判断是否都为真，如果有一个元素为False(0)，则返回False。
 
@@ -1869,7 +1874,7 @@ print(sum2)
 
 <img src="../_static/media/chapter_2/section_10/image25.png" style="width:700px" />
 
-#### 10.2.7 对象元素操作
+- #### 10.2.7 对象元素操作
 
 - **help(object)**：通过help函数可以帮助用户来查询不同对象的信息，包括内置方法、属性等信息。
 
@@ -1947,7 +1952,7 @@ print(vars(A()))
 
 <img src="../_static/media/chapter_2/section_10/image33.png" style="width:800px" />
 
-#### 10.2.8 属性操作
+- #### 10.2.8 属性操作
 
 - **isinstance(object, classinfo)**：函数用来判断object对象是否属于classinfo的类型，如果是则返回True，否则返回False。
 
@@ -2009,7 +2014,7 @@ print(callable(A))
 
 <img src="../_static/media/chapter_2/section_10/image37.png" style="width:800px" />
 
-#### 10.2.9 变量操作
+- #### 10.2.9 变量操作
 
 - **globals()**：返回作用域内的全局变量和其数值所构成的字典。
 
@@ -2034,7 +2039,7 @@ fune()
 
 <img src="../_static/media/chapter_2/section_10/image41.png" style="width:800px" />
 
-#### 10.2.10 人机交互操作
+- #### 10.2.10 人机交互操作
 
 - **print(\*objects, end='\n', file=sys.stdout)**：将objects的内容打印到file指定的文本流当中，末尾以end作为结束。
 
@@ -2058,7 +2063,7 @@ with open("a.txt", 'r') as fr:
 
 <img src="../_static/media/chapter_2/section_10/image43.png" style="width:700px" />
 
-#### 10.2.11 编译操作
+- #### 10.2.11 编译操作
 
 - **compile(source,, mode)**：函数将source编译成代码，然后被exec函数或者是eval函数执行，其中mode参数表示的是编译代码所需要使用的模式。
 
@@ -2078,7 +2083,7 @@ print(eval("float (200) "))
 
 <img src="../_static/media/chapter_2/section_10/image45.png" style="width:700px" />
 
-#### 10.2.12 装饰器函数
+- #### 10.2.12 装饰器函数
 
 - **classmethod()**：classmethod的作用是将一个方法封装成类方法，可以在不创建类对象的前提下调用该装饰器修似的方法。
 
@@ -2163,7 +2168,7 @@ class threading.Thread(grounp=None, target=None, name=None, args={}, kwargs={})
 
 ### 11.4 创建Thread对象
 
-#### 11.4.1 直接创建Thread
+- #### 11.4.1 直接创建Thread
 
 将一个函数对象从类的构造器传递进去，这个对象就是回调函数，用来处理任务。
 
@@ -2179,9 +2184,9 @@ if __name__=='__main__':
     print('i an main-thread')
 ```
 
-<img src="../_static/media/chapter_2/section_11/image4.png" style="width:500px" />
+<img src="../_static/media/chapter_2/section_11/image4.png" class="common_img" />
 
-#### 11.4.2 继承Thread类
+- #### 11.4.2 继承Thread类
 
 编写一个自定义类继承Thread，然后重写run()方法，在run()方法中编写任务处理代码，然后创建这个Thread的子类。
 
@@ -2201,7 +2206,7 @@ if __name__=='__main__':
     print('i an main-thread')
 ```
 
-<img src="../_static/media/chapter_2/section_11/image4.png" style="width:500px" />
+<img src="../_static/media/chapter_2/section_11/image4.png" class="common_img" />
 
 ### 11.5 多线程
 
@@ -2229,13 +2234,13 @@ for t in threads:
 print("主线程：",threading.current_thread().name)
 ```
 
-<img src="../_static/media/chapter_2/section_11/image7.png" style="width:500px" />
+<img src="../_static/media/chapter_2/section_11/image7.png" class="common_img"/>
 
 ### 11.6 线程同步
 
 如果多个线程共同对某个数据修改，则可能出现不可预料的结果，为了保证数据的正确性，需要对多个线程进行同步。使用Thread对象的Lock和Rlock可以实现简单的线程同步。
 
-#### 11.6.1 LOCK锁
+- #### 11.6.1 LOCK锁
 
 - **acquire(blocking=True, timeout=-1)**：使线程进入同步阻塞状态，尝试获得锁定。当调用时参数blocking设置为True，阻塞直到锁被释放，然后将锁锁定并返回True。在参数blocking被设置为False，将不会发生阻塞。
 
@@ -2273,11 +2278,11 @@ if __name__ == '__main__':
     t2.join()
 ```
 
-<img src="../_static/media/chapter_2/section_11/image9.png" style="width:500px" />
+<img src="../_static/media/chapter_2/section_11/image9.png" class="common_img" />
 
 执行后，t1先获得锁，执行完成后再释放锁，t2再获得锁，继续执行后再释放锁，这样避免同时处理，导致数据出错。
 
-#### 11.6.2 RLock锁
+- #### 11.6.2 RLock锁
 
 - **acquire(blocking=True, timeout=-1)**：可以阻塞或非阻塞地获得锁，当无参数调用时，如果这个线程已经拥有锁，递归级别增加一，并立即返回。否则，如果其他线程拥有该锁，则阻塞至该锁解锁。
 
@@ -2305,7 +2310,7 @@ lock.release()
 lock.release()
 ```
 
-<img src="../_static/media/chapter_2/section_11/image11.png" style="width:500px" />
+<img src="../_static/media/chapter_2/section_11/image11.png" class="common_img" />
 
 RLock（可重入锁）是一个可以被同一个线程请求多次的同步指令。RLock使用了"拥有的线程"和"递归等级"的概念，处于锁定状态时，RLock被某个线程拥有。拥有RLock的线程可以再次调用acquire()，释放锁时需要调用release()相同次数。
 
@@ -2329,21 +2334,29 @@ pip是Python包管理工具，该工具提供了对Python包的查找、下载�
 
 ### 12.3 常用指令
 
-1)  install：安装指令包，格式为"**pip3 install \<packagename\>**"，packagename为实际要操作的包名。
+(1) install：安装指令包，格式为"**pip3 install \<packagename\>**"，packagename为实际要操作的包名。
 
-<img src="../_static/media/chapter_2/section_12/image3.png" style="width:700px" />
+```bash
+pip3 install numpy
+```
 
-2)  uninstall：卸载指定包，格式为"**pip3 uninstall \<packagename\>**"。
+(2) uninstall：卸载指定包，格式为"**pip3 uninstall \<packagename\>**"。
 
-<img src="../_static/media/chapter_2/section_12/image4.png" style="width:700px" />
+```bash
+pip3 uninstall numpy
+```
 
-3)  list：列出已安装的包名，格式为"**pip3 list**"。
+(3) list：列出已安装的包名，格式为"**pip3 list**"。
 
-<img src="../_static/media/chapter_2/section_12/image5.png" style="width:700px" />
+```bash
+pip3 list
+```
 
-4)  show：查看已安装包的信息，格式为"**pip3 show \<packagename\>**"。
+(4) show：查看已安装包的信息，格式为"**pip3 show \<packagename\>**"。
 
-<img src="../_static/media/chapter_2/section_12/image5.png" style="width:700px" />
+```bash
+pip3 show numpy
+```
 
 ## 13. Python Numpy基础操作
 
@@ -2351,23 +2364,25 @@ pip是Python包管理工具，该工具提供了对Python包的查找、下载�
 
 NumPy(Numerical Python) 是Python语言的一个扩展程序库，支持大量的维度数组与矩阵运算，此外也针对数组运算提供大量的数学函数库。
 
-1)  在某些方面，Numpy数组与Python内置的list列表类型非常相似，是Python数据科学的核心工具。
+(1) 在某些方面，Numpy数组与Python内置的list列表类型非常相似，是Python数据科学的核心工具。
 
-2)  numpy一维数组可以理解为向量，二维数组即是数据框（更准确来说，对应R里的matrix矩阵）....。
+(2) numpy一维数组可以理解为向量，二维数组即是数据框（更准确来说，对应R里的matrix矩阵）....。
 
-3)  numpy数组与python里的list列表最大的不同是前者需包含同一种数据类型才行，后者则没有此限制。
+(3) numpy数组与python里的list列表最大的不同是前者需包含同一种数据类型才行，后者则没有此限制。
 
 ### 13.2 Numpy的导入
 
 Numpy是一个第三方库，需要先安装，打开命令行终端输入指令安装"**pip3 install numpy**"。
 
-<img src="../_static/media/chapter_2/section_13/image1.png" style="width:700px" />
+```bash
+pip3 install numpy
+```
 
 然后我们需要在python中导入，直接用"**import numpy**"就可以导入。我们可以使用"**import numpy as np**"取"**np**"作为别名。
 
 ### 13.3 创建数组
 
-1)  np.array()：直接创建。
+(1) np.array()：直接创建。
 
 <img src="../_static/media/chapter_2/section_13/image2.png" style="width:700px" />
 
@@ -2390,11 +2405,11 @@ np.full((3, 3), 1.11)
 
 - **np.arange()**：等差数列。
 
-<img src="../_static/media/chapter_2/section_13/image4.png" style="width:500px" />
+<img src="../_static/media/chapter_2/section_13/image4.png" class="common_img" />
 
 - **np.random.randint()**：随机整数。
 
-<img src="../_static/media/chapter_2/section_13/image5.png" style="width:500px" />
+<img src="../_static/media/chapter_2/section_13/image5.png" class="common_img" />
 
 - **np.random.random(10)**：长度为10，符合0~1均匀分布的一维数组。
 
@@ -2402,76 +2417,76 @@ np.full((3, 3), 1.11)
 
 ### 13.6 数值取子集
 
-#### 索引从0开始
+- #### 13.6.1 索引从0开始
 
-1)  类似python的list取子集方式，numpy数组的索引也是从0开始。
+(1) 类似python的list取子集方式，numpy数组的索引也是从0开始。
 
-2)  负数的索引可以理解为倒数第n个值。
+(2) 负数的索引可以理解为倒数第n个值。
 
-#### 取单个值的子集
+- #### 13.6.2 取单个值的子集
 
 直接用元素下标查看。
 
-<img src="../_static/media/chapter_2/section_13/image6.png" style="width:500px" />
+<img src="../_static/media/chapter_2/section_13/image6.png" class="common_img" />
 
-#### 切片取子集
+- #### 13.6.3 切片取子集
 
-1)  对于长度为10的一维数组x1,x1\[0:5\]表示索引0到索引4的子集（不包括索引5），默认步长为1。
+(1) 对于长度为10的一维数组x1,x1\[0:5\]表示索引0到索引4的子集（不包括索引5），默认步长为1。
 
-2)  \[a:b\:c\]中，a为0时，可省略；a，b均省略时，则表示全集。
+(2) \[a:b\:c\]中，a为0时，可省略；a，b均省略时，则表示全集。
 
-3)  步长为负数时，表示逆序取子集。
+(3) 步长为负数时，表示逆序取子集。
 
-<img src="../_static/media/chapter_2/section_13/image7.png" style="width:400px" />
+<img src="../_static/media/chapter_2/section_13/image7.png" class="common_img" />
 
-#### 列表多个索引值取子集
+- #### 13.6.4 列表多个索引值取子集
 
 按索引值依次取出。
 
-<img src="../_static/media/chapter_2/section_13/image8.png" style="width:400px" />
+<img src="../_static/media/chapter_2/section_13/image8.png" class="common_img" />
 
-#### 逻辑布尔值取子集
+- #### 13.6.5 逻辑布尔值取子集
 
-<img src="../_static/media/chapter_2/section_13/image9.png" style="width:400px" />
+<img src="../_static/media/chapter_2/section_13/image9.png" class="common_img" />
 
-#### 创建不相关联的子集副本
+- #### 13.6.6 创建不相关联的子集副本
 
 copy()方法可创建不相关联的子集副本。
 
-<img src="../_static/media/chapter_2/section_13/image10.png" style="width:400px" />
+<img src="../_static/media/chapter_2/section_13/image10.png" class="common_img" />
 
-### 数组维度变换
+### 13.6.7 数组维度变换
 
-1)  矩阵转置T()方法：行列转换。
+(1) 矩阵转置T()方法：行列转换。
 
-<img src="../_static/media/chapter_2/section_13/image11.png" style="width:400px" />
+<img src="../_static/media/chapter_2/section_13/image11.png" class="common_img" />
 
-2)  维度转换reshaple()方法：按照希望的可执行的维度结果转换。
+(2) 维度转换reshaple()方法：按照希望的可执行的维度结果转换。
 
-<img src="../_static/media/chapter_2/section_13/image12.png" style="width:400px" />
+<img src="../_static/media/chapter_2/section_13/image12.png" class="common_img" />
 
 ### 13.7 数组的合并与拆分
 
-#### 数组合并
+- #### 13.7.1 数组合并
 
-1)  concatenate()：可连接两个一维数组，或者按行/列合并两个二维数组。
+(1) concatenate()：可连接两个一维数组，或者按行/列合并两个二维数组。
 
-<img src="../_static/media/chapter_2/section_13/image13.png" style="width:700px" />
+<img src="../_static/media/chapter_2/section_13/image13.png" class="common_img" />
 
-2)  vstack()：纵向合并两个数组，只要这两个数组的列数相同。
+(2) vstack()：纵向合并两个数组，只要这两个数组的列数相同。
 
-<img src="../_static/media/chapter_2/section_13/image14.png" style="width:400px" />
+<img src="../_static/media/chapter_2/section_13/image14.png" class="common_img" />
 
-3)  hstack()：横向合并两个数组，只要这两个数组的行数相同。
+(3) hstack()：横向合并两个数组，只要这两个数组的行数相同。
 
-<img src="../_static/media/chapter_2/section_13/image15.png" style="width:400px" />
+<img src="../_static/media/chapter_2/section_13/image15.png" class="common_img" />
 
-#### 数组拆分
+- #### 13.7.2 数组拆分
 
-1)  split()：拆分一维数组，参数的索引值指定分裂点的位置，当函数结果返回多个对象时，在等号前就要设置相应个数的对象名
+(1) split()：拆分一维数组，参数的索引值指定分裂点的位置，当函数结果返回多个对象时，在等号前就要设置相应个数的对象名
 
-<img src="../_static/media/chapter_2/section_13/image16.png" style="width:400px" />
+<img src="../_static/media/chapter_2/section_13/image16.png" class="common_img" />
 
-2)  vsplit()：横向拆分一个二维数组（上下），同理hsplit()，纵向拆分一个二维数组数组拆分（左右）。
+(2) vsplit()：横向拆分一个二维数组（上下），同理hsplit()，纵向拆分一个二维数组数组拆分（左右）。
 
-<img src="../_static/media/chapter_2/section_13/image17.png" style="width:400px" />
+<img src="../_static/media/chapter_2/section_13/image17.png" class="common_img" />
